@@ -1,0 +1,92 @@
+/* Register Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 100px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align:centre;
+}
+
+input,
+select,
+button {
+    width: 80%; /* Reduce the width */
+    max-width: 300px; /* Optional: Limit max width */
+    padding: 10px;
+    margin: 10px auto; /* Center align each field */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block; /* Ensures the fields align properly */
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 4px #4caf50;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Dropdown Styling */
+select {
+    width: 80%; /* Adjust width as needed */
+    height: 45px; /* Increase the height of the dropdown */
+    font-size: 16px; /* Increase the font size */
+    padding: 8px; /* Add internal spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Password Match Warning */
+.password-warning {
+    color: red;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
